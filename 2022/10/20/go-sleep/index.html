@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   
   
-  <title>go-sleep | EVANGELION</title>
+  <title>睡眠排序 go-sleep | EVANGELION</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
     <meta name="description" content="测试description">
@@ -98,7 +98,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      go-sleep
+      睡眠排序 go-sleep
     </h1>
   
 
@@ -143,7 +143,8 @@
     </div>
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//睡眠排序</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">   b := [<span class="number">7</span>]<span class="type">int</span>&#123;<span class="number">1</span>, <span class="number">7</span>, <span class="number">3</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">3</span>, <span class="number">4</span>&#125;</span><br><span class="line">   <span class="keyword">var</span> wg sync.WaitGroup</span><br><span class="line">   <span class="keyword">for</span> _, v := <span class="keyword">range</span> b &#123;</span><br><span class="line">      wg.Add(<span class="number">1</span>)</span><br><span class="line">      v := v</span><br><span class="line">      <span class="keyword">go</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">         <span class="keyword">defer</span> wg.Done()</span><br><span class="line">         output1(v)</span><br><span class="line">      &#125;()</span><br><span class="line">   &#125;</span><br><span class="line">   wg.Wait()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">output1</span><span class="params">(v <span class="type">int</span>)</span></span> &#123;</span><br><span class="line">   time.Sleep(time.Duration(v) * time.Second)</span><br><span class="line">   fmt.Println(v)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>时间复杂度O(1)的排序</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//睡眠排序</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">   b := [<span class="number">7</span>]<span class="type">int</span>&#123;<span class="number">1</span>, <span class="number">7</span>, <span class="number">3</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">3</span>, <span class="number">4</span>&#125;</span><br><span class="line">   <span class="keyword">var</span> wg sync.WaitGroup</span><br><span class="line">   <span class="keyword">for</span> _, v := <span class="keyword">range</span> b &#123;</span><br><span class="line">      wg.Add(<span class="number">1</span>)</span><br><span class="line">      v := v</span><br><span class="line">      <span class="keyword">go</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">         <span class="keyword">defer</span> wg.Done()</span><br><span class="line">         output(v)</span><br><span class="line">      &#125;()</span><br><span class="line">   &#125;</span><br><span class="line">   wg.Wait()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">output</span><span class="params">(v <span class="type">int</span>)</span></span> &#123;</span><br><span class="line">   time.Sleep(time.Duration(v) * time.Second)</span><br><span class="line">   fmt.Println(v)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         
             <div id="toc-article">
                 
@@ -184,21 +185,12 @@
         
 <nav id="article-nav">
   
-    <a href="/2022/10/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">older</strong>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
-  
   
     <a href="/2022/10/20/%E6%9D%82%E8%B0%88%E6%96%87%E4%BB%B6%E5%90%8D/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">newer</strong>
       <div class="article-nav-title">
         
-          杂谈
+          杂谈测试文
         
       </div>
     </a>
@@ -235,15 +227,11 @@
           </li>
         
           <li>
-            <a href="/2022/10/20/%E6%9D%82%E8%B0%88%E6%96%87%E4%BB%B6%E5%90%8D/">杂谈</a>
+            <a href="/2022/10/20/%E6%9D%82%E8%B0%88%E6%96%87%E4%BB%B6%E5%90%8D/">杂谈测试文</a>
           </li>
         
           <li>
-            <a href="/2022/10/20/go-sleep/">go-sleep</a>
-          </li>
-        
-          <li>
-            <a href="/2022/10/19/hello-world/">Hello World</a>
+            <a href="/2022/10/20/go-sleep/">睡眠排序 go-sleep</a>
           </li>
         
       </ul>
@@ -258,7 +246,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title"><i class="fa fa-classify"></i> 分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DEMO/">DEMO</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/EVA/">EVA</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/GO/">GO</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/EVA/">EVA</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/GO/">GO</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -268,7 +256,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title"><i class="fa fa-archive"></i> 归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022年</a><span class="archive-list-count">4</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022年</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
