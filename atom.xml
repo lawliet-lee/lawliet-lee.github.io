@@ -6,7 +6,7 @@
   <link href="https://lawliet-lee.github.io/atom.xml" rel="self"/>
   
   <link href="https://lawliet-lee.github.io/"/>
-  <updated>2024-07-01T03:34:53.256Z</updated>
+  <updated>2024-07-01T03:45:07.044Z</updated>
   <id>https://lawliet-lee.github.io/</id>
   
   <author>
@@ -18,18 +18,18 @@
   
   <entry>
     <title></title>
-    <link href="https://lawliet-lee.github.io/2024/07/01/test/"/>
-    <id>https://lawliet-lee.github.io/2024/07/01/test/</id>
+    <link href="https://lawliet-lee.github.io/2024/07/01/20240701/"/>
+    <id>https://lawliet-lee.github.io/2024/07/01/20240701/</id>
     <published>2024-07-01T03:08:24.195Z</published>
-    <updated>2024-07-01T03:34:53.256Z</updated>
+    <updated>2024-07-01T03:45:07.044Z</updated>
     
-    <content type="html"><![CDATA[<p>测试一些数据</p><p>fatal: 无法访问 ‘<a href="https://github.com/lawliet-lee/lawliet-lee.github.io.git/&#39;%EF%BC%9AFailed">https://github.com/lawliet-lee/lawliet-lee.github.io.git/&#39;：Failed</a> to connect to github.com port 443 after 75002 ms: Couldn’t connect to server</p><p>INFO  Validating config<br>INFO  Deploying: git<br>INFO  Clearing .deploy_git folder…<br>INFO  Copying files from public folder…<br>INFO  Copying files from extend dirs…<br>位于分支 master<br>无文件要提交，干净的工作区</p><p>1<br>1<br>1</p><p>1<br>1</p>]]></content>
+    <content type="html"><![CDATA[<p>记录日期20240701</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;测试一些数据&lt;/p&gt;
-&lt;p&gt;fatal: 无法访问 ‘&lt;a href=&quot;https://github.com/lawliet-lee/lawliet-lee.github.io.git/&amp;#39;%EF%BC%9AFailed&quot;&gt;https://github.com/law</summary>
+    <summary type="html">&lt;p&gt;记录日期20240701&lt;/p&gt;
+</summary>
       
     
     
