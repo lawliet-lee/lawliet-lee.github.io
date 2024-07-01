@@ -6,7 +6,7 @@
   <link href="https://lawliet-lee.github.io/atom.xml" rel="self"/>
   
   <link href="https://lawliet-lee.github.io/"/>
-  <updated>2022-11-21T09:07:47.165Z</updated>
+  <updated>2024-07-01T03:08:38.104Z</updated>
   <id>https://lawliet-lee.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://lawliet-lee.github.io/2024/07/01/test/"/>
+    <id>https://lawliet-lee.github.io/2024/07/01/test/</id>
+    <published>2024-07-01T03:08:24.195Z</published>
+    <updated>2024-07-01T03:08:38.104Z</updated>
+    
+    <content type="html"><![CDATA[<p>测试一些数据</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;测试一些数据&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>GO-交替输出数字和字母</title>
