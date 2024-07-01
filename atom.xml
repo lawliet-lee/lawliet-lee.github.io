@@ -6,7 +6,7 @@
   <link href="https://lawliet-lee.github.io/atom.xml" rel="self"/>
   
   <link href="https://lawliet-lee.github.io/"/>
-  <updated>2024-07-01T03:14:16.009Z</updated>
+  <updated>2024-07-01T03:28:54.330Z</updated>
   <id>https://lawliet-lee.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://lawliet-lee.github.io/2024/07/01/test/"/>
     <id>https://lawliet-lee.github.io/2024/07/01/test/</id>
     <published>2024-07-01T03:08:24.195Z</published>
-    <updated>2024-07-01T03:14:16.009Z</updated>
+    <updated>2024-07-01T03:28:54.330Z</updated>
     
-    <content type="html"><![CDATA[<p>测试一些数据</p><p>fatal: 无法访问 ‘<a href="https://github.com/lawliet-lee/lawliet-lee.github.io.git/&#39;%EF%BC%9AFailed">https://github.com/lawliet-lee/lawliet-lee.github.io.git/&#39;：Failed</a> to connect to github.com port 443 after 75002 ms: Couldn’t connect to server</p>]]></content>
+    <content type="html"><![CDATA[<p>测试一些数据</p><p>fatal: 无法访问 ‘<a href="https://github.com/lawliet-lee/lawliet-lee.github.io.git/&#39;%EF%BC%9AFailed">https://github.com/lawliet-lee/lawliet-lee.github.io.git/&#39;：Failed</a> to connect to github.com port 443 after 75002 ms: Couldn’t connect to server</p><p>INFO  Validating config<br>INFO  Deploying: git<br>INFO  Clearing .deploy_git folder…<br>INFO  Copying files from public folder…<br>INFO  Copying files from extend dirs…<br>位于分支 master<br>无文件要提交，干净的工作区</p>]]></content>
     
     
       
